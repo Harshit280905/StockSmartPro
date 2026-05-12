@@ -12,6 +12,8 @@ app.use(morgan('dev'));
 
 // Auth Routes
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/orders', require('./routes/orderRoutes'));
+app.use('/api/dashboard', require('./routes/dashboardRoutes'));
 
 // Global Error Handler
 app.use((err, req, res, next) => {
