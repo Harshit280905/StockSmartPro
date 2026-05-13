@@ -14,6 +14,7 @@ app.use(morgan('dev'));
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/orders', require('./routes/orderRoutes'));
 app.use('/api/dashboard', require('./routes/dashboardRoutes'));
+app.use('/api/products', require('./routes/productRoutes'));
 
 // Global Error Handler
 app.use((err, req, res, next) => {
